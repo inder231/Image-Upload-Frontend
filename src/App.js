@@ -9,6 +9,8 @@ export default function App() {
   const [file, setFile] = useState();
   const [isFieldEmpty, setIsFieldEmpty] = useState(false);
   const [isAvatar, setIsAvatar] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   async function uploadFile(event) {
     event.preventDefault();
     // console.log(file);
@@ -19,11 +21,13 @@ export default function App() {
       payload.append("profile", file);
 
       try {
+        setIsLoading(true);
         const { data } = await axios.post(
           "https://cerulean-ant-slip.cyclic.app/upload/profile",
           payload
         );
         setIsAvatar(data.url);
+        setIsLoading(false);
       } catch (error) {
         console.log(error);
       }
@@ -53,6 +57,7 @@ export default function App() {
       >
         {isAvatar && <Avatar size="2xl" src={isAvatar} />}
       </Wrap>
+      {isAvatar && <a href={isAvatar}>Image Link</a>}
       <form onSubmit={uploadFile}>
         <FormControl>
           <FormLabel>Profile Upload</FormLabel>
@@ -62,6 +67,7 @@ export default function App() {
             colorScheme="teal"
             variant="solid"
             margin="10px"
+            isLoading={isLoading}
           >
             Upload
           </Button>
