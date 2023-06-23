@@ -22,11 +22,6 @@ Follow these steps to get started with the project.
   - npm install
 
 
-```
-CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
-CLOUDINARY_API_KEY=your-cloudinary-api-key
-CLOUDINARY_API_SECRET=your-cloudinary-api-secret
-```
 Start the development server:
 
 `npm start`
