@@ -28,6 +28,11 @@ Start the development server:
 
 `The server should now be running on http://localhost:3000.`
 
+### Features
+   - Image upload
+   - Drag & Drop
+   - Image preview
+
 #### Backend Repository
 Find the frontend repository for this project here. [LINK](https://github.com/Inder-Pal-github/Image-Upload-Backend)
 
