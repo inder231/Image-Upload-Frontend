@@ -1,5 +1,5 @@
 
-# Image Upload🤗
+# Image Upload
 
 Short project description goes here.
 
@@ -38,8 +38,6 @@ Deployed Links
 - `Built With`
   - ReactJs
   - Chakra-UI
- 
-### Complete explaination video: [Link](https://drive.google.com/file/d/1kVgVapw9mbybVIG5_NX89_F1jyBtKaSK/view?usp=sharing)🚀
 ##### License
 This project is licensed under the MIT License.
 
