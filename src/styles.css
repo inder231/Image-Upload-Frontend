@@ -2,3 +2,29 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+#box {
+  background-color: lightgray;
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px dashed lightseagreen;
+}
+#box label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#box p {
+  font-size: 12px;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}
